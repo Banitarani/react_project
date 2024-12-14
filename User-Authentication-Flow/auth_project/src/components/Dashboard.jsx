@@ -1,0 +1,18 @@
+/* eslint-disable no-unused-vars */
+// src/components/Dashboard.jsx
+import React from 'react';
+import { useAuth } from '../AuthContext';
+
+const Dashboard = () => {
+    const { logout } = useAuth();
+
+    return (
+        <div>
+            <h2>Dashboard</h2>
+            <p>Welcome to the Dashboard!</p>
+            <button onClick={logout}>Logout</button>
+        </div>
+    );
+};
+
+export default Dashboard;
